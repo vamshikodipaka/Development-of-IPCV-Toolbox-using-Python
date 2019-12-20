@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IPCVToolBox</class>
+ <widget class="QDialog" name="IPCVToolBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>893</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IPCV TOOLBOX - PyQt5/OpenCV/Ubuntu/Atom</string>
+  </property>
+  <widget class="QToolBox" name="ToolBoxIP">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>871</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Image Processing Panel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>871</width>
+      <height>435</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Image Processing Panel</string>
+    </attribute>
+    <widget class="QTabWidget" name="ImageTab">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>821</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose a Image Processing Tool&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 255, 222);</string>
+     </property>
+     <property name="currentIndex">
+      <number>6</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Color Space</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>651</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Select a Color Space</string>
+       </property>
+       <widget class="QPushButton" name="GrayButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>40</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RGB2Gray</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HSVButton">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>40</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RGB2HSV</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="YUVButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>40</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RGB2YUV</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Histogram</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>561</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choose to Perform and Display</string>
+       </property>
+       <widget class="QPushButton" name="HistEquiButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>50</y>
+          <width>201</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Histogram Equalization</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HistogramButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>201</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Histogram</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Operators</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>561</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choosing a Type of Operator to Apply on Image</string>
+       </property>
+       <widget class="QPushButton" name="LaplacianButton">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>201</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Laplacian</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SobelButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>201</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sobel</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_8">
+      <attribute name="title">
+       <string>Morphology</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>561</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choosing a Type of Morphological Operation</string>
+       </property>
+       <widget class="QPushButton" name="ClosingButton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>80</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Closing</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ErodeButton">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Erode</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="OpeningBotton">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>30</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Opening</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DilateButton">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Dilate</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Shape Descriptors</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>10</y>
+         <width>551</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choosing a Type of Descriptor</string>
+       </property>
+       <widget class="QPushButton" name="BBButton">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>151</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Bounding Box</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="MECButton">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>50</y>
+          <width>161</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Max Enclosing Circles</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Hough</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>641</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Apply and Extract</string>
+       </property>
+       <widget class="QPushButton" name="HLButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>141</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hough Lines</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HCButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>50</y>
+          <width>131</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hough Circles</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Extract Features</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>0</y>
+         <width>651</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choose to Apply</string>
+       </property>
+       <widget class="QPushButton" name="SIFTButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SIFT</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SURFButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SURF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FASTButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>FAST</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HomoFButton">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>70</y>
+          <width>191</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Homography</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ISButton">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>191</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Image Stitching</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FMButton">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>70</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Feat Matching</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Others</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>711</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Other Miscelleneous</string>
+       </property>
+       <widget class="QPushButton" name="EHCBotton">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>30</y>
+          <width>231</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Extract Harris Corners</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CCOButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>70</y>
+          <width>261</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find Contours of Connected Objects</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="EDCButton">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>231</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Edge Detection with Canny</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="BlurButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>30</y>
+          <width>91</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Blur:Avg</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LogoButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>70</y>
+          <width>91</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Logo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SPButton">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>231</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Noise::Salt-n-Pepper</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>141</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click on the Load Button and Choose a Input Image!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 252, 208);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(237, 235, 130, 230), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <property name="title">
+      <string>Image Input Control</string>
+     </property>
+     <widget class="QPushButton" name="LoadButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>601</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Display</string>
+     </property>
+     <widget class="QLabel" name="OutputLabel">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Output Image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Inputlabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input Image</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>groupBox_10</zorder>
+    <zorder>ImageTab</zorder>
+    <zorder>groupBox</zorder>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>98</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Camera:: Image and/ Video Capture</string>
+    </attribute>
+    <widget class="QLabel" name="Textlabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>831</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Here we are going to capture Image and Video :: Using Camera</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>171</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click on the Load Button and Choose a Input Image!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 252, 208);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(237, 235, 130, 230), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <property name="title">
+      <string>Camera Input Control</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QPushButton" name="LoadCButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>601</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Display</string>
+     </property>
+     <widget class="QLabel" name="Inputlabel_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Live Im/Vid</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OutputLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Processed Im/Video</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>280</y>
+       <width>291</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Press Capture Image or Capture Video to Capture Im/Vid by webCam&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(238, 241, 255);
+</string>
+     </property>
+     <property name="title">
+      <string>Camera Processing::</string>
+     </property>
+     <widget class="QPushButton" name="CapIButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>201</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Capture Image </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_15">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>280</y>
+       <width>291</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Press Capture Image or Capture Video to Capture Im/Vid by webCam&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(238, 241, 255);
+</string>
+     </property>
+     <property name="title">
+      <string>Camera Processing::</string>
+     </property>
+     <widget class="QPushButton" name="CapVButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>201</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Capture Video</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>871</width>
+      <height>435</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Computer Vision Panel</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>151</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click on to load Camera input Image!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 252, 208);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(237, 235, 130, 230), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <property name="title">
+      <string>Camera Input Control</string>
+     </property>
+     <widget class="QPushButton" name="LoadButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_17">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>601</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Display</string>
+     </property>
+     <widget class="QLabel" name="OutputLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Output Image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Inputlabel_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input Image</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTabWidget" name="CCTab">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>250</y>
+       <width>761</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose a Camera Calib Tool&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 255, 222);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_9">
+      <attribute name="title">
+       <string>Calibration</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>651</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Select an option:</string>
+       </property>
+       <widget class="QPushButton" name="CamCalButton1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>171</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera Calibration</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CUDSPButton">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>211</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera UndistortShortestPath</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CUDCPButton">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>40</y>
+          <width>201</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Camera UndistortCurvePath</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_13">
+      <attribute name="title">
+       <string>Fundamental Mat</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_22">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>711</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choose a method to Compute:</string>
+       </property>
+       <widget class="QPushButton" name="SevButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>7-pont method</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="EigButton">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>8-point method</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RanButton">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RANSAC</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_14">
+      <attribute name="title">
+       <string>Epipolar Geometry</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>641</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Find/Draw Epipoles and Epipolar lines:</string>
+       </property>
+       <widget class="QPushButton" name="ELButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>141</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EpiLines</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="EPButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>50</y>
+          <width>131</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Epipoles</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_15">
+      <attribute name="title">
+       <string>Homography</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_24">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>651</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Find Homography:</string>
+       </property>
+       <widget class="QPushButton" name="HomoButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>301</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find Homography of two images: R-Rbar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HomoButton_2">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>60</y>
+          <width>301</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add R-Rbar: Mosaic</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>871</width>
+      <height>435</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Face Detection and Face Recognition Panel</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>61</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FD/FR</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_20">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>141</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click on the Load Button and Choose a Input Image!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 252, 208);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(237, 235, 130, 230), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <property name="title">
+      <string>FD/FR Input Control</string>
+     </property>
+     <widget class="QPushButton" name="LoadButton_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_19">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>601</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Display</string>
+     </property>
+     <widget class="QLabel" name="OutputLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Output Image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Inputlabel_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>251</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input Image</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTabWidget" name="FDFRTab">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>761</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Face Detection and Face Recognition Tools Available Here!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 255, 222);</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_25">
+      <attribute name="title">
+       <string>Face Detection</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_47">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>651</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Choose Face Detection Method:</string>
+       </property>
+       <widget class="QPushButton" name="FDDLButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>40</y>
+          <width>211</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Face Detect: Deep Learning</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CCFDButton">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>40</y>
+          <width>231</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Face Detect: Cascade classifiers</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_26">
+      <attribute name="title">
+       <string>Face Recognition</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_48">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>711</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="title">
+        <string>Choose Face Recognition Method:</string>
+       </property>
+       <widget class="QPushButton" name="DLFRButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Deep Leaning based</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LBPButton">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Local Binary Patterns</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PCAButton">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>50</y>
+          <width>181</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PCA based</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="TitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>891</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>This is an IPCV ToolBox User-Interface</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.252632 rgba(122, 148, 70, 249), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text">
+    <string>IMAGE PROCESSING AND COMPUTER VISION TOOLBOX</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
