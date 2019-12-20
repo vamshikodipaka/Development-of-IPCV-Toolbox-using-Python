@@ -16,9 +16,7 @@ Primary Observations before Running the project:
 ****All other Files are supplementary files for the execution****
 -----------------------
 3. You will find me using the different(but appropriate) image inputs for different Tool-Implementations.
------------------------
 4. Note: This project uses OpenCV-3.4.2.17
------------------------
 5. Set and install (give proper path to) the "ipcv.py" file
 -----------------------
 
@@ -27,4 +25,5 @@ Primary Observations before Running the project:
 ****************************************************************************
 
 Thanks and Cheers!
+
 Vamshi!
