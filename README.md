@@ -5,9 +5,6 @@ Hence, we as CV Researchers, find it necessary to Develop a Toolbox which can be
 
 ----README.TXT
 
-This document enables you to run Computer Vision Tool Box project.
-=============================================================
-
 Primary Observations before Running the project: 
 ------------------------------------------------
 1. "ipcv222.py" is the main .py file to execute. Run this file in the terminal. GUI Opens. Choose your option for outputs.
