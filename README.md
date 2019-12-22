@@ -21,6 +21,6 @@ Primary Observations before Running the project:
 **** Please Refer to the User-Manual/Report for the Project Explanations****
 ****************************************************************************
 
-Thanks and Cheers!
+Cheers!
 
 Vamshi!
