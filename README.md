@@ -14,7 +14,7 @@ Primary Observations before Running the project:
 
 ****All other Files are supplementary files for the execution****
 -----------------------
-3. Ubuntu 16.04
+3. Ubuntu 18.04
 4. OpenCV-3.4.2.17
 5. PyQt5, Numpy, matplotlib
 6. Set and install (give proper path to) the "ipcv.py" file
