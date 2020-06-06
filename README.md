@@ -16,7 +16,7 @@ Primary Observations before Running the project:
 -----------------------
 3. Ubuntu 16.04
 4. OpenCV-3.4.2.17
-5. PyQt5, Numpy
+5. PyQt5, Numpy, Matplotlib
 6. Set and install (give proper path to) the "ipcv.py" file
 -----------------------
 
