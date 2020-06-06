@@ -3,7 +3,9 @@ Computer Vision Toolbox makes the Vision Researcher's life easier. It can be eff
 OpenCV is the open source programming tool-kit available online for free.
 Hence, we as CV Researchers, find it necessary to Develop a Toolbox which can be effective for IPCV operations.
 
-----README.TXT
+Tools: IP Tooks, Feature Extraction, Camera Capture, Detection
+
+----README.TXT----
 
 Primary Observations before Running the project: 
 ------------------------------------------------
@@ -12,8 +14,8 @@ Primary Observations before Running the project:
 
 ****All other Files are supplementary files for the execution****
 -----------------------
-3. You will find me using the different(but appropriate) image inputs for different Tool-Implementations.
-4. Note: This project uses OpenCV-3.4.2.17
+3. Ubuntu 16.04
+4. OpenCV-3.4.2.17
 5. Set and install (give proper path to) the "ipcv.py" file
 -----------------------
 
