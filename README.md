@@ -3,7 +3,7 @@ Computer Vision Toolbox makes the Vision Researcher's life easier. It can be eff
 OpenCV is the open source programming tool-kit available online for free.
 Hence, we as CV Researchers, find it necessary to Develop a Toolbox which can be effective for IPCV operations.
 
-Tools: IP Tooks, Feature Extraction, Camera Calibration, Camera I-V Capture, Face Detection and Recognition
+Tools: IP Tooks, Feature Extraction, Camera Calibration, Camera I-V Capture and Converters, Face Detection and Recognition
 
 ----README.TXT----
 
@@ -23,6 +23,7 @@ Primary Observations before Running the project:
 ****************************************************************************
 **** Please Refer to the User-Manual/Report for the Project Explanations****
 ****************************************************************************
+
 
 Cheers!
 
